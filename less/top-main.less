@@ -1,0 +1,54 @@
+@import './vars.less';
+
+.nav__list {
+  width: 100%;
+  @media screen and (max-width: 767.98px) {
+    position: fixed;
+    top: 0; 
+    right: -100%;
+    // right: 0;
+    width: 50% !important;
+    height: 100vh;
+    overflow-y: auto;
+    background: @light-gray;
+    z-index: 999;
+    transition: .5s;
+  }
+}
+.nav__list-toggle {
+  right: 0;
+}
+.nav__links {
+  height: 60px;
+  color: #000;
+  transition: .3s;
+  &:hover {
+    color: @brand-primary;
+  }
+  @media screen and (max-width: 767.98px) {
+    &:first-of-type {
+      margin-top: 50px;
+    }
+  }
+}
+.active-link {
+  color: @brand-primary;
+}
+
+.nav__open,
+.nav__close {
+  & i {
+    font-size: 24px;
+  }
+}
+.nav__open {
+  width: 50px;
+}
+.nav__close  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  // background: rgba(0,0,0, .1);
+}

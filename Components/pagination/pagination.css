@@ -1,0 +1,72 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* container */
+.UI-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.UI-pagination * {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+/* li */
+.UI-pagination li {
+  margin-bottom: 10px;
+}
+
+/* links ------------------------------------------------------------------------------------------------------------------  */
+.UI-pagination li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, .87);
+  border: 1px solid rgba(0, 0, 0, .30);
+  border-radius: 3px;
+  margin: 0 2px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.UI-pagination li a:hover {
+  text-decoration: none !important;
+  background: rgba(215,215,215, .4);
+  border-color: rgba(0, 0, 0, .1);
+}
+
+/* active ------------------------------------------------------------------------------------------------------------------  */
+.UI-pagination__link-active {
+  background: rgba(215,215,215, .6);
+}
+.UI-pagination__link-active:hover {
+  background: rgba(215,215,215) !important;
+}
+
+/* disabled ------------------------------------------------------------------------------------------------------------------  */
+.UI-pagination__link-disabled a {
+  color: rgba(0, 0, 0, .30) !important;
+}
+.UI-pagination__link-disabled a:hover {
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.23) !important;
+  cursor: default;
+}

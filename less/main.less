@@ -1,0 +1,66 @@
+@import './vars.less';
+
+// features ======================
+.features_setting {
+  margin-bottom: 80px;
+}
+.features__inner-box {
+  position: relative;
+  top: 0;
+  padding: 60px 20px;
+  background: @light-gray;
+  transition: .3s;
+  &:hover {
+    top: -5px;
+    background: lighten(@brand-primary, 5%);
+    & .features__logo {
+      background: #fff !important;
+      & i {
+        color: @brand-primary;
+      }
+    }
+    & .features__title, .features__link {
+      color: #fff !important; 
+    }
+    & .features__desc {
+      color: @light-gray !important;
+    }
+  }
+}
+.features__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  & i {
+    color: #fff;
+    font-size: 30px;
+  }
+}
+.features__title {
+  font-size: 18px;
+}
+
+// feedback ======================
+.feedback_setting {
+  // min-height: 100vh;
+}
+
+// author =========================
+.author__setting {
+  border-left: 8px solid @brand-primary;
+}
+.author__photo {
+  width: 50px;
+  height: 50px;
+}
+
+
+// about us
+.about__item {
+  list-style-image: url('../images/svg_1.svg') ;
+  background-size: 10px 10px;
+}
